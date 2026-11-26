@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bonjour le monde — Hello World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="christmas-scene" aria-hidden="true">
+    <div class="tree tree-left"><span>✦</span></div>
+    <div class="tree tree-right"><span>✧</span></div>
+    <div class="santa-scene">
+      <span class="santa-moon">☾</span>
+      <span class="santa-sleigh">🛷</span>
+      <span class="santa-figure">🎅</span>
+    </div>
+  </div>
+  <main class="card">
+    <div class="topbar">
+      <span class="badge">
+        <span class="dot" aria-hidden="true"></span>
+        <span id="badge-text">Bienvenue</span>
+      </span>
+      <button id="theme-toggle" class="theme-btn" type="button">☀️</button>
+    </div>
+
+    <label class="language-picker" for="lang-select">
+      <span class="language-icon" aria-hidden="true">✧</span>
+      <span class="visually-hidden">Choisir une langue</span>
+      <select id="lang-select" aria-label="Choisir une langue"></select>
+      <span class="select-chevron" aria-hidden="true">⌄</span>
+    </label>
+
+    <section class="hero" id="hero">
+      <h1 id="greeting">Bonjour le monde !</h1>
+      <p class="subtitle" id="subtitle">
+        Une page moderne, légère et multilingue prête pour votre projet.
+      </p>
+    </section>
+
+    <div class="actions">
+      <button id="wave-btn" class="primary-btn" type="button">Dire bonjour 👋</button>
+      <span id="feedback" class="feedback" role="status" aria-live="polite"></span>
+    </div>
+
+    <footer class="footer">
+      <span id="lang-info">Langue : Français (FR)</span>
+      <span id="clock"></span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
